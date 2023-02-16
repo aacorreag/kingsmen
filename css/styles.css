@@ -17,5 +17,38 @@ body{
   font-size: var(--md);
   font-weight: normal;
   background-color: var(--bg_page);
-color: var(--color_text);
+  color: var(--color_text);
+}
+.nav {
+  background-color: var(--color_primary);
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav__text {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--color_text);
+}
+.logo__img {
+  width: 100px;
+  height: auto;
+}
+.list {
+  display: flex;
+  list-style: none;
+  column-gap: 50px;
+}
+.nav__button {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  border-radius: 50%;
+  background-color: var(--color_secudary);
+  padding: 15px;
+  font-size: var(--md);
+  font-weight: bold;
 }
