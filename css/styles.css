@@ -67,3 +67,24 @@ body{
   transform: scale(1.1);
   background-color: var(--color_secudary);
 }
+.sect {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #3333337d;
+  color: #fff;
+}
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+h1 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
