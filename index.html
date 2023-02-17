@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>King's Men BarberShop</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__logo">
-      <a href="index.html" class="logo__link"><img src="img/Logo_skin.png" alt="Logo" class="logo__img"></a>
-    </div>
-    <nav class="header__nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Nosotros</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Contactos</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Servicios</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="header__btn">
-      ¡Reserva Ya!
-    </button>
-  </header>
-  <section id="sect1" class="sect">
-    <video src="video/videoweb.mp4" autoplay="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg"></video>
-    <h1>King's Men - Calidad</h1>
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>King's Men BarberShop</title>
+  </head>
+  <body>
+      <!-- Contenedor pantalla inicial -->
+    <section class="hero">
+        <!-- Barra de navegacion -->
+      <header class="header">
+        <a href="index.html" class="logo__link"
+          ><img class="logo__img" src="img/Logo_skin.png" alt="Logo"
+        /></a>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Nosotros</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contactos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Servicios</a>
+            </li>
+          </ul>
+        </nav>
+          <!-- boton -->
+        <button class="header__btn">
+          ¡Reserva Ya!
+        </button>
+      </header>
+        <!-- Video de fondo -->
+      <video autoplay loop muted plays-inline class="hero__video">
+        <source src="video/videoweb.mp4" type="video/mp4" />
+        <!--video de fondo-->
+      </video>
+        <!-- informacion pantalla incial -->
+      <div class="hero__info">
+        <!-- Informacion -->
+        <img class="hero__img" src="img/Logo_white.png" alt="Logo" />
+        <h1 class="hero__title">Tu barberia de confianza</h1>
+        <p class="hero__subtitle">
+          Visitanos para tener el gusto de atender con los mejores porfesionales
+        </p>
+      </div>
+    </section>
+    <!-- Cierre de hero -->
+  </body>
 </html>
