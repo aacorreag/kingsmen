@@ -16,43 +16,45 @@
   </head>
   <body>
     <!-- menu -->
-    <nav class="navbar">
-      <a href="index.html" class="logo__link"
-        ><img class="logo__img" src="img/Logo_skin.png" alt="Logo" />
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img class="logo__image" src="img/Logo_skin.png" alt="Logo" />
       </a>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Nosotros</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Servicios</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Contactos</a>
-        </li>
-      </ul>
-      <!-- boton -->
-      <button class="btn">¡Reserva Ya!</button>
-      <figure class="burguerIcon">
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          class="icon icon-tabler icon-tabler-menu-2" 
-          width="44" 
-          height="44" 
-          viewBox="0 0 24 24" 
-          stroke-width="1.5" 
-          stroke="#ffffff" 
-          fill="none" 
-          stroke-linecap="round" 
+      <figure class="burguer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="burguer__icon"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <line x1="4" y1="6" x2="20" y2="6" />
           <line x1="4" y1="12" x2="20" y2="12" />
           <line x1="4" y1="18" x2="20" y2="18" />
         </svg>
       </figure>
-    </nav>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Servicios</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contactos</a>
+          </li>
+        </ul>
+        <!-- boton -->
+      </nav>
+      <button class="btn">¡Reserva Ya!</button>
+    </header>
 
     <!-- Hero -->
     <section class="hero">
@@ -68,21 +70,21 @@
         <source src="video/videoweb.mp4" type="video/mp4" />
         Tu navegador no es compatible con archivos mp4
       </video>
-      <!--video de fondo-->
+      <!-- cierre video de fondo-->
 
       <!-- informacion -->
       <div class="hero__info">
         <img class="hero__img" src="img/Logo_white.png" alt="Logo" />
         <h1 class="hero__title">Tu barberia de confianza</h1>
-        <p class="hero__subtitle">
+        <p class="hero__paragraph">
           Visitanos para tener el gusto de atender con los mejores porfesionales
         </p>
       </div>
     </section>
-    <!-- Cierre de hero -->
-    </section>
-    <section class="services">
-      <h2 class="service__title">Nuestros Servicios</h2>
-    </section>
+  <!-- Cierre de hero -->
+
+
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
