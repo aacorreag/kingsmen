@@ -4,11 +4,9 @@
   --color_primary: #222831;
   --color_secudary: #ffd369;
   --color_text: #eeeeee;
-  --xs: 20px;
-  --sm: 25px;
-  --md: 30px;
-  --lg: 35px;
-  --xl: 40px;
+  --sm: 20px;
+  --md: 28px;
+  --lg: 36px;
 }
 html {
   box-sizing: border-box;
@@ -26,6 +24,36 @@ body {
   color: var(--color_text);
   background-color: var(--black);
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+figure {
+  margin: 0;
+  padding: 0;
+
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 28px;
+}
+
 
 /* Estilos del navbar */
 
@@ -38,6 +66,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 .logo__image {
   width: 100px;
@@ -68,7 +97,6 @@ body {
   transform: scale(1.1);
 }
 .nav__link {
-  text-decoration: none;
   color: var(--color_text);
   font-weight: bold;
 }
@@ -82,13 +110,14 @@ body {
   border: none;
   border-radius: 50px;
   font-weight: bold;
-  font-size: var(--xs);
+  font-size: var(--sm);
   transition: all 0.3s;
 }
 .btn:hover {
   transform: scale(1.1);
   background-color: var(--color_secudary);
 }
+
 
 /*hero*/
 .hero {
@@ -97,7 +126,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 89.8vh;
-  z-index: -10;
+  z-index: 0;
 }
 .hero__video {
   position: absolute;
@@ -122,11 +151,13 @@ body {
 }
 .hero__title {
   margin: 0;
-  font-size: var(--xl);
 }
 .hero__paragraph {
   margin: 20px 0;
   font-size: var(--sm);
+}
+.hero__btn {
+  display: none;
 }
 
 /* ----------------- nosotros ---------------------- */
@@ -136,7 +167,6 @@ body {
 }
 .us__title {
   color: var(--color_text);
-  font-size: var(--xl);
   font-weight: bold;
   text-align: center;
 }
@@ -150,7 +180,6 @@ body {
   border-style: none;
 }
 .us__paragraph {
-  font-size: var(--xs);
   color: var(--color_text);
   text-align: justify;
   line-height: 1.5;
@@ -159,36 +188,34 @@ body {
 /* Servicios */
 
 .services {
-  display: flex;
-  flex-flow: row wrap;
-  column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  justify-items: center;
+  grid-gap: 20px;
 }
 .services__title {
   text-align: center;
-  font-size: var(--xl);
 }
 .service__card {
-  width: 350px;
+  max-width: 100%;
+  transition: 0.5s;
+}
+.service__card:hover {
+  transform: translateY(-5%);
+  filter: grayscale(60%);
 }
 .service__img {
   width: 100%;
   border-radius: 15px;
   transition: 0.05s;
 }
-.service__img:hover {
-  border-radius: 15px 0px 15px 50px;
-  -moz-border-radius: 15px 0px 15px 50px;
-  -webkit-border-radius: 15px 0px 15px 50px;
-  border: 10px double #ffd369;
-}
+
 .service__paragraph {
   text-align: justify;
 }
 
-
-
 /* Figuras */
-.figure-rs {
+.fig-rs {
   position: fixed;
   top: 40%;
   right: 10px;
@@ -197,19 +224,82 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color_secudary);
-  margin: 20px 0;
+  margin: 12px 0;
   padding: 0;
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  background-color: var(--bg_page);
+  transition: 0.3s;
+}
+.fig:hover {
+  background-color: var(--color_secudary);
+}
+.fig__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contactos */
+.contact {
+  font-size: var(--sm);
+}
+.contacts__title {
+  text-align: center;
+}
+.contact__hour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+.contacts__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 15px;
+}
+.contacts__item {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
 }
 
 
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color_primary);
+  margin: 0;
+  padding: 10px 20px;
+}
+.social {
+  display: flex;
+  column-gap: 10px;
+}
+.footer__text {
+  margin: 0;
+  font-size: 12px;
+}
+
 /* Media queris */
 @media (max-width: 768px) {
-  .btn {
+  .nav__btn {
     display: none;
+  }
+  .btn__link {
+    display: none;
+  }
+  .btn__res {
+    display: block;
   }
   .nav {
     width: 100%;
@@ -236,10 +326,13 @@ body {
     width: 90%;
   }
   .hero__title {
-    font-size: 28px;
+    font-size: var(--md)
   }
   .hero__paragraph {
-    font-size: 24px;
+    font-size: var(--sm);
+  }
+  .hero__btn {
+    display: block;
   }
 
   /* nosotros */
@@ -250,12 +343,37 @@ body {
   }
 
   /* Servicios */
-  
-
 
 
   /* figuras */
-  .figure-rs {
+  .fig-rs {
     top: 70%;
+  }
+
+  /* Contactos */
+
+  .contact {
+    font-size: 14px;
+  }
+  
+  /* Footer */
+  .footer {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts__list {
+    justify-content: start;
+    row-gap: 10px;
+  }
+
+  /* Footer */
+  .social__fig {
+    width: 40px;
+    height: 40px;
+  }
+  .social__icon {
+    width: 30px;
   }
 }

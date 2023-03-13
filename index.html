@@ -16,8 +16,8 @@
   </head>
   <body>
     <!-- menu -->
-    <header class="header">
-      <a href="index.html" class="logo"
+    <header  class="header">
+      <a href="#inicio" class="logo"
         ><img class="logo__image" src="img/Logo_skin.png" alt="Logo" />
       </a>
       <figure class="burguer">
@@ -42,18 +42,18 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Nosotros</a>
+            <a href="#nosotros" class="nav__link">Nosotros</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Servicios</a>
+            <a href="#servicios" class="nav__link">Servicios</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Contactos</a>
+            <a href="#contactos" class="nav__link">Contactos</a>
           </li>
         </ul>
         <!-- boton -->
       </nav>
-      <button class="btn">¡Reserva Ya!</button>
+      <a class= "btn__link" href="https://wa.me/573043563040?text=Hola,+quisiera+agendar+un+turno++Gracias." target="_blank"><button class="btn nav__btn">¡Reserva Ya!</button></a>
     </header>
     <!-- Cierre header -->
 
@@ -80,15 +80,17 @@
         <p class="hero__paragraph">
           Visitanos para tener el gusto de atender con los mejores porfesionales
         </p>
+      <a id="inicio" class= "hero__link" href="https://wa.me/573043563040?text=Hola,+quisiera+agendar+un+turno++Gracias." target="_blank"><button class="btn hero__btn">¡Agenda Aqui!</button></a>
       </div>
     </section>
     <!-- Cierre de hero -->
 
     <!-- Main -->
     <main class="main-container">
+
       <!-- Nosotros -->
-      <section class="us container">
-        <h2 class="us__title">Sobre Nosotros</h2>
+      <section id="nosotros" class="us container">
+        <h2  class="us__title">Sobre Nosotros</h2>
         <div class="us__info">
           <div class="us__image">
             <img class="us__img" src="img/us.png" alt="about-us" />
@@ -111,11 +113,11 @@
       </section>
 
       <!-- Servicios -->
-      <section class="container">
-        <h2 class="services__title">Nuestros Servicios</h2>
+      <section id="servicios" class="container">
+        <h2  class="services__title">Nuestros Servicios</h2>
         <div class="services">
           <div class="service__card">
-            <h3 class="service__title">Corte Adulto</h3>
+            <h4 class="service__title">Corte Adulto</h3>
             <img class="service__img" src="img/Corte de cabello.png" alt="servicio" />
             <p class="service__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -125,7 +127,7 @@
             </p>
           </div>
           <div class="service__card">
-            <h3 class="service__title">Corte Niño</h3>
+            <h4 class="service__title">Corte Niño</h3>
             <img class="service__img" src="img/Corte niño.png" alt="servicio" />
             <p class="service__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -135,7 +137,7 @@
             </p>
           </div>
           <div class="service__card">
-            <h3 class="service__title">Arreglo Barba</h3>
+            <h4 class="service__title">Arreglo Barba</h3>
             <img class="service__img" src="img/corte de barba.png" alt="servicio" />
             <p class="service__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -145,7 +147,7 @@
             </p>
           </div>
           <div class="service__card">
-            <h3 class="service__title">Depilación cejas</h3>
+            <h4 class="service__title">Depilación cejas</h3>
             <img class="service__img" src="img/corte de cejas.png" alt="servicio" />
             <p class="service__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -156,23 +158,125 @@
           </div>
         </div>
       </section>
-      <div class="figure-rs">
-        <figure class="ws fig">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon-whatsapp icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-          </svg>
+
+      <!-- figuras -->
+      <div class="fig-rs">
+        <figure class="fig fig-rs__ws">
+          <a class="fig__link" href="https://wa.me/573043563040?text=Hola,+quisiera+agendar+un+turno++Gracias." target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg>
+          </a>
         </figure>
-        <figure class="phone fig">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon-phone icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-          </svg>
+
+        <figure class="fig fig-rs__fb">
+          <a class="fig__link" href="https://www.facebook.com/kingsmen2910" target="_blank" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+          </a>
         </figure>
       </div>
+
+      <!-- Contactos -->
+      <section id="contactos" class="container">
+        <h2  class="contacts__title">Contactos</h2>
+        <div class="contact">
+          <div class="contact__hour">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <polyline points="12 7 12 12 15 15" />
+              </svg>
+            <p class="hour__text">Horarios de Atención: Lunes a Sábado 9:00 a.m. a 7:00 p.m.
+            </p>
+          </div>
+          <div class="contact__contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                  </svg>
+                <span class="contact__addres">Calle 34a #29-03, Barrancabermeja</span>
+              </li>
+              <li class="contacts__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="7" y="4" width="10" height="16" rx="1" />
+                    <line x1="11" y1="5" x2="13" y2="5" />
+                    <line x1="12" y1="17" x2="12" y2="17.01" />
+                  </svg>
+                <span class="contact__cel">304 356 3040</span> 
+              </li>
+              <li class="contacts__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <polyline points="3 7 12 13 21 7" />
+                  </svg>
+                <span class="contact__email">kingsmen.barber29@gmail.com</span>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="index.html" class="logo"
+        ><img class="logo__image" src="img/Logo_skin.png" alt="Logo" />
+      </a>
+      <div class="social">
+        <figure class="social__fig fig">
+          <a class="fig__link" href="https://www.facebook.com/kingsmen2910" target="_blank" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="social__icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+          </a>
+        </figure>
+
+        <figure class="social__fig fig">
+          <a class="fig__link" href="https://www.instagram.com/kingsmen.barber29/" target="_blank" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="social__icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3" />
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg>
+          </a>
+        </figure>
+
+        <figure class="social__fig fig">
+          <a class="fig__link" href="https://wa.me/573043563040?text=Hola,+quisiera+agendar+un+turno++Gracias" target="_blank" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="social__icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg>
+          </a>
+        </figure>
+
+        <figure class="social__fig fig">
+          <a class="fig__link" href="https://www.facebook.com/kingsmen2910" target="_blank" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="social__icon icon-tabler icon-tabler-brand-tiktok" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+            </svg>
+          </a>
+        </figure>
+      </div>
+      <p class="footer__text">
+        ©2022 KING'SMEN® - TODOS LOS DERECHOS RESERVADOS.
+      </p>
+    </footer>
     <script src="scripts/main.js"></script>
   </body>
 </html>
